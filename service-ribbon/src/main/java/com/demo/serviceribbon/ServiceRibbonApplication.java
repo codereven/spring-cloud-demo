@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
+//注解标记为Ribbon服务
 @EnableDiscoveryClient
 public class ServiceRibbonApplication {
 
