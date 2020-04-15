@@ -3,3 +3,12 @@
 它具有可插拔的注解特性，可使用Feign 注解和JAX-RS注解。
 Feign支持可插拔的编码器和解码器。
 Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的效果。
+
+
+简而言之：
+
+Feign 采用的是基于接口的注解
+Feign 整合了ribbon，具有负载均衡的能力
+整合了Hystrix，具有熔断的能力
+
+使用路断路器需要指定当前接口的实现类 使用@FeignClient指定SchedualServiceHiHystric
